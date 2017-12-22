@@ -28,6 +28,12 @@ Follow the instructions at [the official wercker documentation](http://blog.werc
 
 To configure Google Analytics and Hotjar, insert your Google Analytics Tracking ID and Hotjar script version and ID into `gatsby-config.js`.
 
+## Writing tests
+
+The Jest runner is configured to look for all files named `*.test.js` and run all the tests in them. I recommend placing the test file in the same folder with the component it's testing.
+
+To run tests use `yarn test`, and `yarn test-coverage` if you want a coverage report as well.
+
 
 ## Installing
 * `yarn` && `yarn develop` to develop
