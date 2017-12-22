@@ -29,7 +29,7 @@ module.exports = class HTML extends React.Component {
             name='viewport'
             content='width=device-width, initial-scale=1, shrink-to-fit=no'
           />
-          <title>GDPRShield | Complete solutions for GDPR Compliance</title>
+          <title>Gatsby Jest Starter Template</title>
           {this.props.headComponents}
           {css}
         </head>
@@ -42,7 +42,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
         </body>
-        <script src={__PATH_PREFIX__ + 'driftSetup.js'} />
       </html>
     )
   }
