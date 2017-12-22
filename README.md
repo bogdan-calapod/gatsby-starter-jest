@@ -1,6 +1,7 @@
 # Gatsby Starter Template + Jest & Sass
 
 Built using [Gatsby](http://gatsbyjs.org)
+
 [Gatsby documentation available here](https://www.gatsbyjs.org/docs/)
 
 A simple starter template for Gatsby, with Jest, Sass, Google Analytics & Hotjar
@@ -41,3 +42,6 @@ To run tests use `yarn test`, and `yarn test-coverage` if you want a coverage re
 
 ## Deploying
 * `yarn build` and deploy contents of `public` folder
+
+
+## Contibutions are welcome! 😊
