@@ -1,0 +1,81 @@
+{
+  "name": "gdpr-landing-page",
+  "description": "GDPR Landing Page",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "author": "Bogdan Marius Calapod <bogdan.calapod@codaintelligence.com>",
+  "dependencies": {
+    "gatsby": "^1.9.145",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-google-analytics": "^1.0.14",
+    "gatsby-plugin-hotjar": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.15",
+    "react-lazyload": "^2.3.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gdpr",
+    "landingpage"
+  ],
+  "scripts": {
+    "start": "gatsby develop --open",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "es2015",
+          "react"
+        ],
+        "plugins": [
+          "syntax-class-properties",
+          "transform-class-properties"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "transform": {
+      ".(js|jsx)": "babel-jest"
+    },
+    "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.cache/"
+    ],
+    "modulePaths": [
+      "src"
+    ],
+    "moduleNameMapper": {
+      "\\.(scss|svg|png|jpg)$": "<rootDir>/src/styleMock.js"
+    },
+    "moduleFileExtensions": [
+      "jsx",
+      "js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "setupTestFrameworkScriptFile": "./src/setupTests.js"
+  },
+  "devDependencies": {
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.0.3",
+    "prettier": "^1.9.2",
+    "prop-types": "^15.6.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-test-renderer": "^16.2.0"
+  }
+}
